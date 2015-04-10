@@ -15,6 +15,6 @@
   </target>
   <target name="DeployAndRunAllTests">
     <echo>Deploy and RunAllTests in Org with username: ${sf.username}</echo>
-    <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="${user.dir}/src" logType="Detail" runallTests="${sf.runallTests}" />
+    <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="${user.dir}/src" logType="Detail" runallTests="${sf.runallTests}" checkonly="true"/>
   </target>
 </project>
